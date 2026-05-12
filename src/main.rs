@@ -19,7 +19,7 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
         let now = time::Instant::now();
 
         // Uncomment baris di bawah ini saat simulasi slow subscriber:
-        // thread::sleep(ten_millis);
+        thread::sleep(ten_millis);
 
         println!(
             "In 2406404913's Computer. Message received: {:?}",
